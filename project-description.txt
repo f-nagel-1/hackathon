@@ -1,0 +1,39 @@
+Rock Paper Scissors Website.
+
+Goal: User uses website to play against computer Rock, Paper, Scissors. 
+Each game lasts 3 rounds (each round is 1 decision). 
+User selects one of the 3 possible moves by clicking on one of 3 icons that represent the moves, and afterwards computer selects random one as well. Depending on whose decision is stronger ("hirarchy" of what move beats what), the winner receives 1 point.
+A scoreboard displays the current points for both user and computer.
+The first person to win 3 points, wins the game.
+
+
+
+HTML Features:
+- One page site consisting of header section at top, underneath a "playing area" section.
+
+- Playing Area will consists of:
+1. "scoreboard" that shows the current points with user_points and computer_points next to each other
+2. 3 icons that represent the 3 possible moves
+3. "Explanation of last move"- such as "Paper covers rock, you won this round"
+4. "Play again" button
+
+JS:
+
+- 3 buttons with images of moves - add eventlisteners for click
+- as soon as one move is clicked => fires event of choice saved in variable as "user_choice".
+- as soon as clicked => fires event of computer randomly chosing one of of the three moves, saves as variable "computer_choice"
+- computer chosing function with math.random (chosing a number from 0-2, with each one representing a move. i.e. rock = 0, paper = 1, scissors = 2),
+
+- function compare of moves to update scoreboard:
+ if statements. split into three sections for the 3 possible scenarios after each move - if computer wins or if user wins or if there is a draw. possible scenarios like:  "if user picks rock and computer picks paper, user loses" etc. 
+
+- function update scoreboard: 
+depending on outcome, the element of the scoreboard will be updated (perhaps making the the number into a span and then working with InnerHTML to update number).
+
+- Set limit of the game: after one player gets to 3 points, the game is over. 
+
+- Play Again button resets the scoreboard to 0:0 and  game starts from new. Add Eventlisteners to this button => fires event of user_points and computer_points to be reset to 0 each.
+
+
+possible additional functions:
+set time out for when user takes too long to make a move. prompt "make your move"
