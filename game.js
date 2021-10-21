@@ -8,16 +8,10 @@ let rock = document.getElementById("imageRock");
 let paper = document.getElementById("imagePaper");
 let scissor = document.getElementById("imageScissors");
 
-<<<<<<< HEAD
+
 let timeOutPrompt = document.getElementsByTagName("p")[0];
 let resetButton = document.getElementById("btn");
 
-
-
-
-
-
-=======
 
 
 let options = ["scissor", "rock", "paper"];
@@ -27,6 +21,9 @@ function getRandomInt(max) {
 
 var userScore = 0;
 var compScore = 0;
+
+
+
 
 function userPick(userChoice) {
 
@@ -42,18 +39,28 @@ function userPick(userChoice) {
 		}
 
 	}else if(compChoice === "paper"){
-		
+
 	}else if(compChoice === "scissor"){
 		if(userChoice === "paper"){
-			
+
 		}
 	}
->>>>>>> 5027866141e56fabb79b640376efa5518de5c6df
+
+//
+// function decideifexecute(){
+//     if (compScore > 2){
+//         result.innerHTML = "you lost!";
+//     } else if (userScore > 2){
+//         result.innerHTML = "you won!";
+//     } else {
+//         userPick();
+//     }
+// }
+//
+// decideifexecute();
 
 
 
-
-<<<<<<< HEAD
 function makeMove() {
     var t;
     window.onload = resetTimer;
@@ -71,7 +78,7 @@ function makeMove() {
 
     function resetTimer() {
         clearTimeout(t);
-        t = setTimeout(yourFunction, 3000);
+        t = setTimeout(yourFunction, 2000);
         timeOutPrompt.innerHTML = "";
     }
 }
@@ -80,35 +87,7 @@ makeMove();
 
 
 resetButton.addEventListener("click", function() {
-      userPoint.innerHTML = "0";
-      computerScore.innerHTML = "0";
-
-     //do we need something with event listeners here?
+      userPoint.innerHTML = 0;
+      compPoint.innerHTML = 0;
     });
-=======
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-// function checkWinner(argument) {
-	
-// }
-
-
-// let reset = document.getElementById("btn")
-// reset.addEventListener("click", function(){
-// 	startGame();
-// })
-
-// startGame()
->>>>>>> 5027866141e56fabb79b640376efa5518de5c6df
