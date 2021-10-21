@@ -16,6 +16,11 @@ body{
     padding: 15px;
 }
 
+#header > h1{
+    padding: 15px;
+    background-color: white;
+}
+
 
 .scoreboard {
     padding: 20px;
@@ -34,8 +39,23 @@ body{
     align-items: center;
 }
 
-.userScore{
+#scoreSource{
+    padding: 10px;
+    font-weight: bold;
+    color: white;
 
+}
+
+#results{
+    padding:20px;
+
+}
+
+#choices{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 75vw;
 }
 
 #imageRock{
@@ -48,4 +68,14 @@ body{
 
 #imageScissors{
     width: 96px;
+}
+
+p{
+    padding: 20px;
+}
+
+#btn{
+    font-size: 24px;
+    color: black;
+    background-color: white;
 }
