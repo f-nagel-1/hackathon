@@ -20,7 +20,7 @@
 
             <div class="float-child">
                  <div id= "scoreSource">Computer</div>
-                <div class="computerScore">2</div>
+                <div id="computerScore">0</div>
             </div>
 
         </div>
@@ -28,9 +28,9 @@
         <div id="results">Paper covers rock</div>
         
         <div id= "choices">
-        <img id="imageRock" src="rock.png"  class="logo" />
-        <img id="imagePaper" src="paper.png"  class="logo" />
-        <img id="imageScissors" src="scissors.png"  class="logo" />
+        <img id="imageRock" src="rock.png"  class="logo" onclick="userPick('rock')" />
+        <img id="imagePaper" src="paper.png"  class="logo" onclick="userPick('paper')"/>
+        <img id="imageScissors" src="scissors.png"  class="logo" onclick="userPick('scissor')"/>
         </div>
 
         <p>Make your move</p>
