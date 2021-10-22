@@ -29,41 +29,62 @@ function userPick(userChoice) {
 			userScore++
 			userPoint.innerHTML= userScore
 			result.innerHTML= "paper covers rock wooo"
+		} else if(userChoice === "scissor"){
+			compScore++
+			compPoint.innerHTML= compScore
+			result.innerHTML= "rock smashes scissor raa"
 		}
 
 	}else if(compChoice === "paper"){
+		if(userChoice === "scissor"){
+			userScore++
+			userPoint.innerHTML= userScore
+			result.innerHTML= "scissor cuts paper"
+		} else if(userChoice === "rock"){
+			compScore++
+			compPoint.innerHTML= compScore
+			result.innerHTML= "paper covers rock"
+		}
 		
 	}else if(compChoice === "scissor"){
-		if(userChoice === "paper"){
-			
+		if(userChoice === "rock"){
+			userScore++
+			userPoint.innerHTML= userScore
+			result.innerHTML= "rock smashes scissor raa"
+	}	else if(userChoice === "paper"){
+			compScore++
+			compPoint.innerHTML= compScore
+			result.innerHTML= "scissor cuts paper"
 		}
-	}
+}};
 
 
+// function play()
 
 
-
-
+function checkWinner() {
+  if (userScore > 2) {
+        result.innerHTML= "You win the game! Congratulations!"
+        : "Computer wins the game! Try again next time!";
+    alert(winner);
+    return true;
+  }
+  return false;
 }
 
 
+checkWinner()
 
 
 
 
 
-
-
-
-
-// function checkWinner(argument) {
-	
+// function winner() {
+// 	if(userScore>2){
+// 		result.innerHTML= "YOU ARE THE WINNER!"
+// 	} else if(compScore>2){
+// 		result.innerHTML= "YOU LOSE,TRY AGAIN!"
+// 	} 
 // }
 
-
-// let reset = document.getElementById("btn")
-// reset.addEventListener("click", function(){
-// 	startGame();
-// })
-
-// startGame()
+// winner()
