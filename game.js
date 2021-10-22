@@ -7,12 +7,20 @@ let logos = document.getElementsByClassName("logo");
 let rock = document.getElementById("imageRock");
 let paper = document.getElementById("imagePaper");
 let scissor = document.getElementById("imageScissors");
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 6a8a0197205fbff7e57e7d8dec8d63b0e4811d9d
 let timeOutPrompt = document.getElementsByTagName("p")[0];
 let resetButton = document.getElementById("btn");
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6a8a0197205fbff7e57e7d8dec8d63b0e4811d9d
 let options = ["scissor", "rock", "paper"];
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
@@ -20,6 +28,9 @@ function getRandomInt(max) {
 
 var userScore = 0;
 var compScore = 0;
+
+
+
 
 function userPick(userChoice) {
     let compChoice = options[getRandomInt(3)]
@@ -31,9 +42,14 @@ function userPick(userChoice) {
 			userScore++
 			userPoint.innerHTML= userScore
 			result.innerHTML= "paper covers rock wooo"
+		} else if(userChoice === "scissor"){
+			compScore++
+			compPoint.innerHTML= compScore
+			result.innerHTML= "rock smashes scissor raa"
 		}
 
 	}else if(compChoice === "paper"){
+<<<<<<< HEAD
 
 	}else if(compChoice === "scissor"){
 		if(userChoice === "paper"){
@@ -42,6 +58,59 @@ function userPick(userChoice) {
 	}
 
 }
+=======
+		if(userChoice === "scissor"){
+			userScore++
+			userPoint.innerHTML= userScore
+			result.innerHTML= "scissor cuts paper"
+		} else if(userChoice === "rock"){
+			compScore++
+			compPoint.innerHTML= compScore
+			result.innerHTML= "paper covers rock"
+		}
+		
+	}else if(compChoice === "scissor"){
+		if(userChoice === "rock"){
+			userScore++
+			userPoint.innerHTML= userScore
+			result.innerHTML= "rock smashes scissor raa"
+	}	else if(userChoice === "paper"){
+			compScore++
+			compPoint.innerHTML= compScore
+			result.innerHTML= "scissor cuts paper"
+		}
+}};
+
+
+// function play()
+
+
+function checkWinner() {
+  if (userScore > 2) {
+        result.innerHTML= "You win the game! Congratulations!"
+        : "Computer wins the game! Try again next time!";
+    alert(winner);
+    return true;
+  }
+  return false;
+}
+
+
+checkWinner()
+
+//
+// function decideifexecute(){
+//     if (compScore > 2){
+//         result.innerHTML = "you lost!";
+//     } else if (userScore > 2){
+//         result.innerHTML = "you won!";
+//     } else {
+//         userPick();
+//     }
+// }
+//
+// decideifexecute();
+>>>>>>> 6a8a0197205fbff7e57e7d8dec8d63b0e4811d9d
 
 
 //
@@ -81,7 +150,7 @@ function makeMove() {
 
     function resetTimer() {
         clearTimeout(t);
-        t = setTimeout(yourFunction, 3000);
+        t = setTimeout(yourFunction, 2000);
         timeOutPrompt.innerHTML = "";
     }
 }
@@ -90,11 +159,10 @@ makeMove();
 
 
 resetButton.addEventListener("click", function() {
-      userPoint.innerHTML = "0";
-      computerScore.innerHTML = "0";
-
-     //do we need something with event listeners here?
+      userPoint.innerHTML = 0;
+      compPoint.innerHTML = 0;
     });
+<<<<<<< HEAD
 
 
 
@@ -118,3 +186,6 @@ resetButton.addEventListener("click", function() {
 // reset.addEventListener("click", function(){
 // 	startGame();
 // })
+=======
+}
+>>>>>>> 6a8a0197205fbff7e57e7d8dec8d63b0e4811d9d
