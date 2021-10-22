@@ -7,17 +7,10 @@ let logos = document.getElementsByClassName("logo");
 let rock = document.getElementById("imageRock");
 let paper = document.getElementById("imagePaper");
 let scissor = document.getElementById("imageScissors");
-
-<<<<<<< HEAD
 let timeOutPrompt = document.getElementsByTagName("p")[0];
 let resetButton = document.getElementById("btn");
 
 
-
-
-
-
-=======
 
 
 let options = ["scissor", "rock", "paper"];
@@ -29,8 +22,7 @@ var userScore = 0;
 var compScore = 0;
 
 function userPick(userChoice) {
-
-	let compChoice = options[getRandomInt(3)]
+    let compChoice = options[getRandomInt(3)]
 	console.log("computer pick is " + compChoice + " the user choice is " + userChoice)
 	if(compChoice === userChoice){
 		result.innerHTML= "It's a tie!"
@@ -42,18 +34,36 @@ function userPick(userChoice) {
 		}
 
 	}else if(compChoice === "paper"){
-		
+
 	}else if(compChoice === "scissor"){
 		if(userChoice === "paper"){
-			
+
 		}
 	}
->>>>>>> 5027866141e56fabb79b640376efa5518de5c6df
+
+}
 
 
+//
+// function number1(){
+//
+//     if (userScore > 2){
+//         console.log("3 reached");
+//     }else{
+//         console.log("nope")};
+// }
+// number1();
 
 
-<<<<<<< HEAD
+// function disableClick(){
+//     if (userScore > 3 || compScore > 3 ){
+//         paper.style.pointerEvents = 'none';
+//         console.log("disabled")
+// }
+// }
+// disableClick();
+
+
 function makeMove() {
     var t;
     window.onload = resetTimer;
@@ -85,10 +95,9 @@ resetButton.addEventListener("click", function() {
 
      //do we need something with event listeners here?
     });
-=======
 
 
-}
+
 
 
 
@@ -101,7 +110,7 @@ resetButton.addEventListener("click", function() {
 
 
 // function checkWinner(argument) {
-	
+
 // }
 
 
@@ -109,6 +118,3 @@ resetButton.addEventListener("click", function() {
 // reset.addEventListener("click", function(){
 // 	startGame();
 // })
-
-// startGame()
->>>>>>> 5027866141e56fabb79b640376efa5518de5c6df
