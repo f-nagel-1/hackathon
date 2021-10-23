@@ -7,6 +7,7 @@ let logos = document.getElementsByClassName("logo");
 let rock = document.getElementById("imageRock");
 let paper = document.getElementById("imagePaper");
 let scissor = document.getElementById("imageScissors");
+let winner = document.getElementById("winner");
 
 
 let timeOutPrompt = document.getElementsByTagName("p")[0];
@@ -62,25 +63,27 @@ function userPick(userChoice) {
 			compScore++
 			compPoint.innerHTML= compScore
 			result.innerHTML= "scissor cuts paper"
+			console.log(userScore)
+			console.log(compScore)
 		}
-}};
+};
 
 
 // function play()
 
 
-function checkWinner() {
-  if (userScore > 2) {
-        result.innerHTML= "You win the game! Congratulations!"
-        : "Computer wins the game! Try again next time!";
-    alert(winner);
-    return true;
-  }
-  return false;
-}
+// function checkWinner() {
+//   if (userScore > 2) {
+//         result.innerHTML= "You win the game! Congratulations!"
+//         : "Computer wins the game! Try again next time!";
+//     alert(winner);
+//     return true;
+//   }
+//   return false;
+// }
 
 
-checkWinner()
+// checkWinner()
 
 //
 // function decideifexecute(){
