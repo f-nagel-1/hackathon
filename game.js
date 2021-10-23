@@ -86,6 +86,7 @@ function userPick(userChoice) {
 
 
 
+
 // function win(userScore, compScore) {
 //  if (userScore > 2) {
 // console.log ("You win!");
@@ -131,25 +132,32 @@ function userPick(userChoice) {
 function makeMove() {
 var t;
 window.onload = resetTimer;
+
 window.onmousemove = resetTimer;
-                            window.onmousedown = resetTimer;  // catches touchscreen presses as well
-                            window.ontouchstart = resetTimer; // catches touchscreen swipes as well
-                            window.onclick = resetTimer;      // catches touchpad clicks as well
-                            window.onkeydown = resetTimer;
-                            window.addEventListener('scroll', resetTimer, true); // improved; see comments
-                            function yourFunction() {
-                                timeOutPrompt.innerHTML = "Make your move!";
-                                // console.log("message appeared");
-                            }
-                            function resetTimer() {
-                                clearTimeout(t);
-                                t = setTimeout(yourFunction, 2000);
-                                timeOutPrompt.innerHTML = "";
+window.onmousemove = resetTimer;
+window.onmousedown = resetTimer;  // catches touchscreen presses as well
+window.ontouchstart = resetTimer; // catches touchscreen swipes as well
+window.onclick = resetTimer;      // catches touchpad clicks as well
+window.onkeydown = resetTimer;
+window.addEventListener('scroll', resetTimer, true); // improved; see comments
+  
+  
+function yourFunction() {
+timeOutPrompt.innerHTML = "Make your move!";
+              }
+function resetTimer() {
+clearTimeout(t);
+t = setTimeout(yourFunction, 2000);
+timeOutPrompt.innerHTML = "";
                             }
                         }
 makeMove();
+
+//resetting the game by pressing the button- brings back the choices div and resets points
 resetButton.addEventListener("click", function() {
+
 userPoint.innerHTML = 0;
 compPoint.innerHTML = 0;
-choices.style.visibility = 'visible';
-                    });
+choices.style.visibility = 'visible'; });
+
+
