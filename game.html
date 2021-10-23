@@ -4,47 +4,36 @@
     <meta charset="utf-8">
     <title>Our Game</title>
     <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="header">
-        <h1>Rock, Paper, Scissors</h1>
+        <h1>Rock Paper Scissors</h1>
     </header>
     <container id="container">
-
         <div class="scoreboard">
-
             <div class="float-child">
                 <div id= "scoreSource">Player</div>
                 <div id= "userScore">0</div>
             </div>
-
             <div class="float-child">
                  <div id= "scoreSource">Computer</div>
-
                 <div id="computerScore">0</div>
-
-
             </div>
-
         </div>
-
-        <div id="results">Paper covers rock</div>
-
+        <div id="results">Start the game by selecting a move. Good luck!</div>
         <div id= "choices">
         <img id="imageRock" src="rock.png"  class="logo" onclick="userPick('rock')" />
         <img id="imagePaper" src="paper.png"  class="logo" onclick="userPick('paper')"/>
-        <img id="imageScissors" src="scissors.png"  class="logo" onclick="userPick('scissor')"/>
+        <img id="imageScissors" src="scissors2.jpg"  class="logo" onclick="userPick('scissor')"/>
         </div>
-
-        <p></p>
-
+        
         <button type="button" name="button" id="btn">Play again</button>
-
-        <p id="winner"></p>
-
+        <p></p>
     </container>
-
-
 <script type="text/javascript" src="game.js"></script>
 </body>
 </html>
