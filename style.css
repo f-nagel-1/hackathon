@@ -4,25 +4,22 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
-
 body{
     height: 100vh;
     text-align: center;
 }
-
 #header{
-    background-color: white;
+    background-color: #F4C6A5;
     width: 100 vw;
     height: 15%;
-
 }
-
 #header > h1{
     padding: 15px;
-    background-color: white;
+    background-color: #F4C6A5;
+    color: grey;
+    font-family: 'Skranji', cursive;
+    font-size: 60px;
 }
-
-
 .scoreboard {
     padding: 20px;
     display: flex;
@@ -30,28 +27,21 @@ body{
     justify-content: space-between;
     width: 40%;
     margin: auto;
-
 }
-
 .float-child {
     width: 45%;
-    border: 2px solid red;
+    border: 3px solid #414653;
     padding: 5px;
     align-items: center;
 }
-
 #scoreSource{
     padding: 10px;
     font-weight: bold;
     color: white;
-
 }
-
 #results{
     padding:20px;
-
 }
-
 #choices{
     display: flex;
     justify-content: space-evenly;
@@ -61,23 +51,48 @@ body{
 
 #imageRock{
     width: 96px;
+    border-radius: 50%;
+    transition: box-shadow 0.3s;
+    /* box-shadow: 0 0 0 15px #ddd; */
+}
+
+#imageRock:hover{
+    box-shadow: 0 0 0 4px #0d0d75;
 }
 
 #imagePaper{
     width: 96px;
+    border-radius: 50%;
+    transition: box-shadow 0.3s;
+}
+
+#imagePaper:hover{
+    box-shadow: 0 0 0 4px #0d0d75;
 }
 
 #imageScissors{
     width: 96px;
      border-radius: 50%;
+     transition: box-shadow 0.3s;
 }
+
+#imageScissors:hover{
+    box-shadow: 0 0 0 4px #0d0d75;
+}
+
+
+#sorry{
+    display: none;
+}
+
 
 p{
     padding: 20px;
+    font-size: 20px;
 }
-
 #btn{
     font-size: 24px;
     color: black;
     background-color: white;
+    margin: 40px 0px;
 }
