@@ -54,25 +54,51 @@ body{
     transition: box-shadow 0.3s;
     /* box-shadow: 0 0 0 15px #ddd; */
 }
+
 #imageRock:hover{
     box-shadow: 0 0 0 4px #0D0D75;
+
+#imageRock:hover{
+    box-shadow: 0 0 0 4px #0d0d75;
+
 }
 #imagePaper{
     width: 96px;
     border-radius: 50%;
     transition: box-shadow 0.3s;
 }
+
 #imagePaper:hover{
     box-shadow: 0 0 0 4px #0D0D75;
+
+
+#imagePaper:hover{
+    box-shadow: 0 0 0 4px #0d0d75;
+
 }
 #imageScissors{
     width: 96px;
      border-radius: 50%;
      transition: box-shadow 0.3s;
+
 }
 #imageScissors:hover{
     box-shadow: 0 0 0 4px #0D0D75;
 }
+
+}
+
+#imageScissors:hover{
+    box-shadow: 0 0 0 4px #0d0d75;
+}
+
+
+#sorry{
+    display: none;
+}
+
+
+
 p{
     padding: 20px;
     font-size: 20px;
@@ -82,4 +108,8 @@ p{
     color: black;
     background-color: white;
     margin: 40px 0px;
+
 }
+
+}
+
